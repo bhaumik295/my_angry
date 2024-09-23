@@ -1,0 +1,40 @@
+Project	Project Difficulty (1-10)	Libraries/Tools Used	Library/Tool Complexity (0-5)	Description & Features
+Hello World	1	None	0	Simple print function to introduce Python
+Simple Calculator	2	None	0	Basic arithmetic calculator; add GUI with Tkinter (Complexity: 2)
+Number Guessing Game	2	random	1	Random number guessing game; add difficulty levels and scoring system
+Palindrome Checker	2	None	0	Check if a word or number is a palindrome
+Rock, Paper, Scissors	3	random	1	User vs computer game; add scoring or GUI with Tkinter (Complexity: 2)
+To-Do List (CLI)	3	None	0	Command-line to-do list; optionally add file handling (csv or json)
+Password Generator	3	random, string	1	Generate secure passwords; add password strength meter and clipboard functionality
+Hangman Game	3	random	1	Word guessing game; add GUI with Tkinter (Complexity: 2), multiplayer support
+Alarm Clock	3	datetime, time	1	Create an alarm clock; add snooze and sound alarms functionality
+Weather App (CLI)	4	requests, json	2	Fetch live weather data from OpenWeatherMap API; format output
+Binary Search Algorithm	4	None	0	Implement binary search; visualize it using matplotlib (Complexity: 2)
+Currency Converter	4	requests, json	2	Convert between currencies using live API data (e.g., ExchangeRatesAPI)
+Tic-Tac-Toe Game	4	None	0	Simple 2-player game; add AI opponent, GUI with Tkinter (Complexity: 2)
+Simple Web Scraper	4	BeautifulSoup, requests	3	Scrape data from websites; handle pagination and save to CSV
+Markdown to HTML Converter	4	markdown2	2	Convert markdown files to HTML; add CSS styling and save as web page
+File Encryption/Decryption	4	cryptography	3	Encrypt and decrypt text files; add password-based encryption for extra security
+Simple Chatbot (Rule-Based)	5	nltk	3	Create a basic rule-based chatbot; use keyword matching for simple responses
+Quiz App	5	json	1	Command-line quiz with multiple-choice questions; add scoring and timer
+Expense Tracker	5	csv, pandas	3	Track personal expenses and visualize data using matplotlib (Complexity: 2)
+REST API with Flask	5	Flask, Flask-RESTful	3	Build a simple REST API; add JWT authentication and database connection (SQLite)
+GUI Stopwatch	5	Tkinter, time	2	Create a stopwatch GUI with lap functionality and countdown timer
+PDF Merger/Splitter	5	PyPDF2	2	Merge and split PDF files; add a drag-and-drop GUI using Tkinter
+Voice Assistant	6	speech_recognition, pyttsx3	3	Build a basic voice assistant; add web search and task automation
+URL Shortener	6	Flask, sqlite3	3	Create a URL shortener service with analytics tracking and API support
+Flappy Bird Game	6	pygame	3	Create a Flappy Bird clone; add scoring, levels, and difficulty progression
+Simple Blog Website	6	Flask, SQLAlchemy	3	Build a blog website; add user authentication and commenting features
+Sudoku Solver	6	numpy	2	Create a solver for Sudoku puzzles; add a GUI for puzzle input
+Personal Portfolio Website	6	Flask, HTML/CSS	2	Build a personal portfolio; add contact form and blog section
+Face Recognition App	7	opencv, face_recognition	4	Recognize faces from images or video feeds in real-time
+E-commerce Website	7	Django, Stripe	4	Build a full-featured e-commerce platform; add product search, cart, and user accounts
+ML Movie Recommendation System	7	pandas, scikit-learn, numpy	4	Build a movie recommender using collaborative filtering or content-based filtering
+Stock Price Predictor	7	pandas, scikit-learn, yfinance	4	Predict stock prices using machine learning; use LSTM for time-series forecasting
+Blockchain App	8	hashlib, Flask	4	Build a simple blockchain and cryptocurrency model; add proof-of-work, mining system
+Social Media Platform	8	Django, SQLite, REST API	4	Create a basic social media platform; add real-time chat, likes, and comments
+AI Chatbot with NLP	8	nltk, spaCy, tensorflow	5	Build an AI chatbot with NLP; integrate machine learning for better responses
+Self-Driving Car Simulation	9	pygame, opencv, tensorflow	5	Simulate a self-driving car with real-time decision-making and sensors
+Neural Network from Scratch	9	numpy, math	4	Build a neural network from scratch without external libraries like tensorflow
+AI Image Classifier	9	tensorflow, keras, opencv	5	Train an image classification model using deep learning on custom datasets
+Autonomous Drone Simulation	10	ROS, Gazebo, opencv	5	Simulate an autonomous drone with real-time object detection and navigation

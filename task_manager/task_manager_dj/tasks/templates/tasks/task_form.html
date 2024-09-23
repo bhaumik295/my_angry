@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Task</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'tasks/styles.css' %}">
+</head>
+<body>
+    <h1>Create New Task</h1>
+    <form method="post">
+        {% csrf_token %}
+        
+        <!-- Task Name -->
+        <label for="task_name">Task Name:</label>
+        <input type="text" name="task_name" placeholder="Enter task name" value="{{ form.task_name.value|default:'' }}">
+        <small>{{ form.task_name.help_text }}</small>
+        <br>
+    
+        <!-- Task Description -->
+        <label for="task_description">Task Description:</label>
+        <textarea name="task_description" placeholder="Enter task description">{{ form.task_description.value|default:'' }}</textarea>
+        <small>{{ form.task_description.help_text }}</small>
+        <br>
+    
+        <!-- Task Due Date -->
+        <label for="task_due_date">Task Due Date:</label>
+        <input type="text" name="task_due_date" placeholder="YYYY-MM-DD" value="{{ form.task_due_date.value|default:'' }}">
+        <small>{{ form.task_due_date.help_text }}</small>
+        <br>
+    
+        <!-- Task Time (Default Current Time) -->
+        <label for="task_time">Task Time (default is current time):</label>
+        <input type="text" name="task_time" placeholder="HH:MM" value="{{ form.task_time.value|default:'' }}">
+        <small>{{ form.task_time.help_text }}</small>
+        <br>
+    
+        <button type="submit">Submit</button>
+    </form>
+    
+    
+    <a href="{% url 'task_list' %}">Back to List</a>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Still Angry?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #yes-button {
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: red;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Are you still angry?</h1>
+    <button id="yes-button">Yes</button>
+
+    <script>
+        const button = document.getElementById('yes-button');
+        
+        // Function to detect if the user is on a mobile device
+        function isMobileDevice() {
+            return 'ontouchstart' in document.documentElement;
+        }
+
+        // Function to move the button randomly
+        function moveButtonRandomly() {
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+
+            const randomX = Math.random() * (screenWidth - button.offsetWidth);
+            const randomY = Math.random() * (screenHeight - button.offsetHeight);
+
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        }
+
+        // Mobile device behavior
+        if (isMobileDevice()) {
+            button.addEventListener('touchstart', function () {
+                button.textContent = 'No';
+                button.style.backgroundColor = 'green';
+            });
+        } 
+        // Laptop/Desktop behavior
+        else {
+            button.addEventListener('mouseover', function () {
+                moveButtonRandomly();
+            });
+        }
+    </script>
+
+</body>
+</html>

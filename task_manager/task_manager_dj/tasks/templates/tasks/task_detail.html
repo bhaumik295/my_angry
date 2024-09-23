@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ task.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'tasks/styles.css' %}">
+</head>
+<body>
+    <h1>{{ task.title }}</h1>
+    <p>{{ task.description }}</p>
+    <p>Due Date: {{ task.due_date }}</p>
+    <p>Status: {{ task.is_completed }}</p>
+    <a href="{% url 'task_list' %}">Back to List</a>
+</body>
+</html>
